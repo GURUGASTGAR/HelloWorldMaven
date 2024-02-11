@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-               withMaven(maven : 'apache_maven_3.6.3'){
+               withMaven(maven : 'apache-maven-3.6.3'){
                         sh "mvn deploy"
                 }
 
